@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <div id="navbar-placeholder"></div>
+    <div class="relative flex size-full min-h-screen flex-col bg-neutral-50 group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#141414] tracking-light text-[32px] font-bold leading-tight">Explore</p>
+                <p class="text-neutral-500 text-sm font-normal leading-normal">Search or browse</p>
+              </div>
+            </div>
+            <div class="px-4 py-3">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                  <div
+                    class="text-neutral-500 flex border-none bg-[#ededed] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                    data-icon="MagnifyingGlass"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    placeholder="Search"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#ededed] focus:border-none h-full placeholder:text-neutral-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                </div>
+              </label>
+            </div>
+            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Your Mood</h2>
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#ededed] pl-4 pr-4">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Happy</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#ededed] pl-4 pr-4">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Sad</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#ededed] pl-4 pr-4">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Angry</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#ededed] pl-4 pr-4">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Suprise</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#ededed] pl-4 pr-4">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Fear</p>
+              </div>
+            </div>
+            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Browse by Mood</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfYN23c87dj2p7r93RpAhCTOMYsQmif-Lttp2-qNTZoPkGdOOWIOfh_UM-YekIDIBFXA0IZK9ujw34s3QBzICMvMpSCl2GL3Chq3dw8TPrJBsuqMFV-smzCtPpNdZmsdwdvomu3-5n0b6jJItW1Wk2SyZZhAwxUNyPV05Ir-Cw9ELiIpsxX18udDpTn-zI8rI00swSENjvh0SEyLdXDbYtxykaaCMklhXdRDAeGVmYohYekjcUc85VTX5mCa8JxfTOOOs6k19sgwmq");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Uplifting</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC8tmnp6-CcPgelr6wuDbadIR0oaMLsBrpo4VpHTA6HbLjtrII7etjhHwR4FpZ1wqSWsCjcpNjTmvvA48gv_hjldy3597VFSdqgJKVzQrmp466qnneTVtCa-ieDolL-VMIbzaGG0CrvvPLHs357F5mqszRk9LTOj0CMt5dbxsNsBWsz6BLglLdbyBFe1jUq8k-SlTVkgyyAzay9-BOayQO0yh9vGIpoClOjixVe0EqHsbk6-7qSADPR3yQufMzFZYd28S0AOH97A8dZ");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Chill</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqv1bn38FZL6BuOmsmoPaPXQeztgO1FQDycgzWO_b6kfSUj4behXvE1ar4v_dBcej6LkbqGN6wAjWRkViwTL2NhIxvyuisQYQkJZyQWW9It6SMiGzEWA_MjY5bVz-FXu_w31pPRRciQRdFjFi2qMlLUD-MvNgHDW3kY_YxdYgkgFKvXolLj1cbxg05iR2S0vc4R3eoTx8FrVC6FcJTuXWdCjVxC6FWfbrJLsgqpxBGksIlE5WbFU_VohxvTjNl8lBl4D-NrrGZoQn6");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Party</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsNhOIMZq4_PI2qBc_nEgRkdanekT-4VnjCPFnTC0kGBf-epKWqxjb4Vr3dcea5mYs21rMllvIzpBccNjv_8hBMNrV18tDcCwweB8WnCK1XsnfI2bsiCxHDpLRhJfbGg_Ya_TVnrU5Qs5lGIe6NRBGzBtLtmmRFZrdxu7xArvy1TgrhrXy1xmHiwylmtUFNug3cwyW72BODCOura-T6GtxXIzHGvwA98ttkePTFaAAl1OlJXxrllIjbbGg1bm2a70RkAVBlRboSAQB");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Sad</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQWsEw4lGSXHC8haVLXxHKiFcQ6V_stgo22hxtXvb4LBW9pkClQLFZRyj4UZmMK_PJ1ZXWmKXXcbPieb5cWB68qsf5P1fXdjqEd1JuVWnxytdnSNmW0Nckf6NyWXP0K9blnfT5zu8BwECZGD8l8NTDD86-9qIWT6RlSPe_CaTv5YrV_FXVZDldVRbh0qbnXU_kWm3VTuvhTBileJFTbNzWrV0dCkXPdaZon-L1ERNQ6QCn9H4n6BjWtcDkcZGlIrQYVbDNvzGpxU1O");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Study</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYp8w29kyUEzMAU6mP4VUMqrV08NulQgn831Q4vEGrZbpYBpYN_CBQL14t39bCrURPRmW3ngR9DFUQVIi4pjoUu4XLHGhpkVyk8wtkXf9V1LZjSBZiIjXjh1Bh1F5ruWvS3erEIB-mCAf45R03_nXX-O-QR1x0SOGCftKPJlOSmggpFv2Hzy_lcoCeGpaLLeIbVJ41eJdS4slDf_fFAu6HIqivDTz49CQqRmdlrATO1peQR85LA9M_BHRLeHnrP93XpXdlt7aV3JMp");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Workout</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_d41tS8R3PoHvd5KNBK0z85ZERnuulnIHjRbhHlQFvoJ6cLKx4hSs5CIFRInJRw4qSuSbc0EyAfdB7g4Hp8V2PJ9uPUP7gCa-qsmdJaP3sqFC5r9HvjwjBRgv0RzyE02QZHn4N8V1AfxY8lzIn9pFo2xoldZzGFdFW8Qoh8NrTf_T6jaR8Bm1mPSJgyY3cAHoJsZzzkUJxZivoW04LsEow8v3B5TgTbwNEOIbsxGIEmzTpkrJjECi4gxJoOdCFpWOGNoSfTZCHOYA");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Romantic</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDuInwj6Mz_ND6azv-UYUoqnFG7uk6oCmoLVg0uIII1JLmBMCMHcZ1HD4UVnIIXqclNRp4mDQYJxhuNauVvmvrYFTuu4XOpMISyF1UCwHtTMa7f5_a3rcm_lh2d_jQHwIJt8eE7MYZSKJcFvyEwevdXbS3aa3f77JgQod9GoSBKOS2N3st9vGJLMR6IjEJmWP2dImHSDp1venF6NsLvRliyMI-aZhKNdEEFr-dn9bLRt_jonQXt9knAQ1pAxDCjKf_shFy6FjKi5iTj");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Travel</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZLjWy6i1nUtQtaa2qBWb541qUCJnrXt-TNNOsueytCDV_nMqiWCPEicVrghqPuv9UGNV9746efy1EZE0cyb1UtffOOC-wkJ_yDG7-lpm0pN78qwiDeiAp6XztE2-Cc0nLmHGCeLa25JeU_Fh5uLSLejwqqNQOWcszziud3HBf8FAq_2Dq1kwwb6UvmuMKNUfLsiNUu-m5cctA6Mig7ygHVycgS83Y2ZYYCl_3Nz64d4KV2bOr1ZvcRs3zkeH4hTCBOJ-UlQ2H8unm");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Gaming</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAY1R3JIE_kcRLZe5VjkaAmGS1CwP443zD-s8KcwXwiygTrb7_h1NxnbtSuZBwSddEV2Qc1mbEBH0f1YrrQLydK0gaYDNuhnIggUsxxjCAVRtE5GPZdeXGqJ637sTWStct8weTl1G3VnqDqON1Qu2CB9ybLxfIuPW2TpyP5u39OPXsNZAn9wTJUF3-5QgJDYIQUcGDvdOw7cCdwyRrhg15RWiLL9MWyle1JK2yYxclY771sIG1KFYV1F5009NMVusuJFxw_ll51z7P2");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Focus</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDg7Ty6eBm_DBKR_H2V58GeahtLEYw_gYRwXBloOUkov4YCME3hONdwGXrNMuJ7l3oe5PhM7xy8uhjV18Bk0XjKgsbFfOhBlx86XcmKTf5NXxK9aNHqDLDSmdd6GcfaZczjP8tO_CR4tGBiljYz1G5z1NyCNminDQQSeoz3lhp9fhGwMCfc2URMt0GxFdhlW_lIdr-N3EX7RIgDhH823ZhCVRQMmCfeBmooWSfB0tHX7napdQKBkDGjY-eeMArAczdIUl-0g1Ga_tQM");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Sleep</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwti50xMFvAYFY-3XZ9dDpPnKcbKB7S8ujegAEwWJ8g_N8JgsTR4TWXggoaRNV4S_KbQ-qVk4PiXctcOBhGtjF0CY-0CpFYiSVWdCMgxZ95AZfj7DCOOsMM3BWrqVs-CaJOJx8u1y9e414_13f-wwxKQzsciQ8j4A8kD_RbQ4Sx2AI6KaRNzJQOgKrqBYIfB-V5kGSWldmdP57tYnoFKiJjPcE5y-Gbc4qS7Yb1OA9KACCPia4sz_CIART7lgkckUSkGI3F7b7Hd2u");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Dance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

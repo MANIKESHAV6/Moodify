@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <style>
+  #navbar-frame {
+    overflow: hidden;
+    height: 70px;
+  }
+
+  /* Prevent parent page from inheriting scroll from iframe */
+  iframe::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>HOME</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+     <iframe src="navbar.html" scrollong="no" frameborder="0" style="width: 100%; height: 70px; display: block; overflow: hidden;" id="navbar-frame"></iframe>
+
+
+    <div class="relative flex size-full min-h-screen flex-col bg-neutral-50 group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+       
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfGcXXkS3Q3dSbd4S7JxHP7yJG3i4oGTFoskmp-czhwnFRitofhnOvTkptyiIrBhhDUKQK04WyMR7S1Spcicb75BR-2WyAjPZ7yaIVY4_EhZC8QueaDZBj-D5ZRj-6LYfh--quQ1ZS3d5bkLe4_D5Q5JKL4YfRR9XSDXC0ttnzWT1YFBKA8_FsgoTTE7AVOkUFtg5NMjHT6bxVAI_bsFuBQgiepgopLQUp2ZYkXS5TYzJ1P0OTNnLRgWV1jo1UttBCP945Qqq2IkeL");'
+                >
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Discover Music for Every Mood
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Capture your current mood with our camera feature and let us curate the perfect playlist for you.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#141414] text-neutral-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Open Camera</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recommended Playlists</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-8">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuApROIAnUCuspgBarZbsBA4K4BRkd-mFip6JooUyzGKulQFc8l4-y8-yc3lSFOTSRwQLFKDLsoai4vI6sQtsqdEWGec2q7UbKQUKHo4PTQMIVNv2YUOxWV76q5TjLFOMgWwaPEf7zCeBDeToQYTfT8zawlWDUTQc1FRy2YedOx3t9_9CLK6reJBJP8pO0cxOhD2oKK5kB-cpYd3WIT4_54ipTP0xPy51pdHA8UY6wG_UYl8Hx0o9_SryO3q9SpH8V_aSBI6S4tRtLx4");'
+                  ></div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Chill Vibes</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLwBc-zsWtI_aBLZB24xePP4Q9aj248pWiNs9pHqo-33xoMJJkIJqolfnrSZdDNMxRKptecXmFNEc8ulpdF9E-4FvVZrYCWdZnQ6n9ug5K-TZzIyHJnBH-2C5bW8L_GqJEYyVEit8ZIEi4ok-FNPEagy6huNQhiSnNAZTfIvwEb9PFvzOWO3oINTBjHO87KgFarsXIsSyurXjK33su166qXnlMHv0z9XjbQbr_BZb4et3vUZivTzs2rrdXf4kgWpC8BsurVQ1B-YhX");'
+                  ></div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Focus Flow</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDcZ1ZMAa4Zv3ppwky9SnqblK59NXXWBDNwMx5s4VbJz8hyHEeyXr7YaCqSgNbqT-rCpf0c8G9o91Z74eWWm9vcvtCu7RC-2po5ndyvi4GeDwz5ppEb5n99MkRsHyhCc60W0T1lmbHG2gpEiTfUReG6AYUODIL5O_NB2BvIQ9wIp3qGDb8xqIQV1cRdmo_VZu87MW-ULPvE0jv9-k2NlxFJbHuiHCEHhAyRYpI-DNpuNGKG__JfEyow0I6yk6hP7jvRhlwoWMKoNqY2");'
+                  ></div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Energy Boost</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnc6pnrHdHk5FFYSTgjuzomThb16YM6LoUy4XmGCGm5BkzUJSlD4IQyjou8gxZcJR2L9y_cjCPr51CqybllY3YPm6kDUiJUF7zIvT7Nsscl0h8q4bg3qNd2txgu-cFu7qSYjk5qRCB5l22v774D3dK5Ae6BxTovTbxAVu12Wl5T2oi0vFr2NvQ2R5Z0urMIUvcLyzAHhz518OBa0knSwv0ENxMr69D7_bDCNJvUzyTl8B7DaPXEhIhqDkQvLU0ssbFQ30l1SJWl_az");'
+                  ></div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Relaxing Sounds</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYCS3BK83g_KTTggA70B47ahtdm92qEZCDRImJSjAjozPvROkQOXoYWZe5NBlfIA8u1qjH_wC56xBygUfwEPB1T4FAhtOksruj6zccuy6UNMHR6Zm0lakoPB3F8WJ79ZMiiVg29xawAyiYcnAv8de01k3bmCvxuE0UUMmLaE67bXNvxA-XRdwPBp22v-oKej1VqWanIj2TCnVoZFHCAXfNPW9ntpiCElUtftCYEfpeytWJH8W_Pqmrz9AYcV-XEF5KQ4u556MEQX55");'
+                  ></div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Happy Hits</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Top Tracks</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-8">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHoQG7z9F63JFbSyz-LkLAQnzRWUf70BAJid6RYmjYS4LBIuZQViRiqU4LDywMo8eKcSuYJsnow4CPPWmqDoo4o0aY8Gyv5zlavtFZ_UXxGprreSGG2KiYN0jEYMJo6WxdrXYa8jEnFzcbi-l_WiFbIAJW50fJIqjbmkYK8g2aWDOulg3gdWcaaHGdj9-uO7AUUEI7zQ8291q9dGwBpsKT83kQ6rohD6tEEDPtt1YqkuVbK5IcTCfn1AdZrruvHHewnWnsyo-_-Xab");'
+                  ></div>
+                  <div>
+                    <p class="text-[#141414] text-base font-medium leading-normal">Song Title 1</p>
+                    <p class="text-neutral-500 text-sm font-normal leading-normal">Artist 1</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuChUNZjLmH749AhsZRdu1kDTkuXG01NJiY8clo83BMrzy4nCnW_dLeyL_JIYPOm1idfJaBHqJuvOoyky1BJnbgg51BCbudjDmc0Sw_2HPUl5Ag3oXEdpEmTz2Q5-9ihSjjtwft6-rWp7Rwfb-5-XONvW-Rq7HUQw9bdjsbNFB2etKoxC22zcRdyENcgltks9a9ZFtRYMkiUEPjsk0m_l5LAYHDWmWmLcQSM-pSzDmu-41eHrD1bhZK2AAtC4KfWobrevtksAhq4B8QI");'
+                  ></div>
+                  <div>
+                    <p class="text-[#141414] text-base font-medium leading-normal">Song Title 2</p>
+                    <p class="text-neutral-500 text-sm font-normal leading-normal">Artist 2</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQrxNmRuvMS9cAUiEPrVA6jtWtnePYNFNszhHGdDW8jxZOpr-QXwUErlHGY7_jZgFF0YT0pQstNPWPW3j8pkTv6oM8C-GV0389ZiOWa9skAdiuNOtVKo6Aro6OqX1OhvrJ47CX997bd2w1DnZB4OknglNyorM73JAruMcNUzOoviSxn8vgZruAD8wSAiU2b5izNMoYUoXvKbu5fPf22xvktxajGAPYTzinEievDd0QFaPi8SXkjTRdCTulBfwXi5dNZHohv-WpOK0D");'
+                  ></div>
+                  <div>
+                    <p class="text-[#141414] text-base font-medium leading-normal">Song Title 3</p>
+                    <p class="text-neutral-500 text-sm font-normal leading-normal">Artist 3</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDmmvGWDVPadZdniq9QH97zUrpC0dIorbeRZW2MAWJPlk7ivIVsMHWNwCpOL8q6aoGbTbP-u5J0ZSS3XhLjwdtR5GYrA09DIDV_zGCsmeIPT8Z0sh6uf6mlMIomNpPstMrd3p3E0nXPUk7ty0nUoxxWEWN_25pTzA88ncNizrhXylGDMrzhlJFJI-dNwz3hm_7cshSWrja6rWUKZiTcAWh6XBolJRfOnFnOmdnElFgd9lC1tDuzg0vpwZfouIjlwJR6uCxaxEC0Q6C");'
+                  ></div>
+                  <div>
+                    <p class="text-[#141414] text-base font-medium leading-normal">Song Title 4</p>
+                    <p class="text-neutral-500 text-sm font-normal leading-normal">Artist 4</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRIWXQR7CzHkGXsJ8EgKyUzo5KCJgjq8UnvSOhg4RHl-s-2cetIrWQSMrmGia1OMUAUeZTwnHlD-V6XX-U3IFAkur0nRWmowS0iUQCxL5seBuP6L8FN8nLgaMmqvvoGLeCh6RFI-nqyx3tdwNkgMRbxjVRAWdN2X4b6eRHgdC8WAUu2vwBiPjMWFu3mgmlYNPDkK56Tos-taOcZgcpHlRJbk09fXIrdMCQhNgQiaA4XCm4Fb-1zllCRPORZDI4TAMJ4CrA4i8cJFcJ");'
+                  ></div>
+                  <div>
+                    <p class="text-[#141414] text-base font-medium leading-normal">Song Title 5</p>
+                    <p class="text-neutral-500 text-sm font-normal leading-normal">Artist 5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </body>
+</html>
