@@ -16,9 +16,9 @@ Below are real-time screenshots captured during mood detection and interaction.
 |-------------------------------------------------------|----------------------------------------------------|---------------------------------------------------------|
 | ![Result](Screenshots/Happy_facedetection_output.png) | ![Sad](Screenshots/Happy_facedetection_output.png) | ![Surprise](Screenshots/Happy_facedetection_output.png) |
 
-|               Profile DashBoard                       |
-|-------------------------------------------------------|
-| ![Profile](Screenshots/profile.png)                   |
+|               Profile DashBoard                       |                  Detailed-Statistics                      |      
+|-------------------------------------------------------|-----------------------------------------------------------|
+| ![Profile](Screenshots/Profile-Dashboard.png)         |![Detailed-Statistics](Screenshots/Detailed-statistics.png)|
 
 ---
 
