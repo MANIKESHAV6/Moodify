@@ -451,3 +451,69 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+from collections import Counter
+import time
+
+def detect_mood_once():
+    """Detect mood from webcam over multiple frames and return most frequent result"""
+    system = MoodMusicRecommendationSystem()
+
+    detected_moods = []
+    frame_count = 0
+    max_frames = 10
+    print("📸 Starting mood detection...")
+
+    start_time = time.time()
+    while frame_count < max_frames:
+        ret, frame = system.cap.read()
+        if not ret:
+            continue
+
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        faces = system.face_cascade.detectMultiScale(gray, 1.3, 5, minSize=(100, 100))
+
+        if len(faces) == 0:
+            continue
+
+        for (x, y, w, h) in faces:
+            face_roi = frame[y:y+h, x:x+w]
+            try:
+                result = DeepFace.analyze(
+                    face_roi,
+                    actions=['emotion'],
+                    enforce_detection=False,
+                    silent=True
+                )
+
+                emotions = result[0]['emotion'] if isinstance(result, list) else result['emotion']
+                dominant = max(emotions, key=emotions.get)
+                confidence = emotions[dominant]
+
+                if confidence >= 50:  # ✅ Only accept strong predictions
+                    detected_moods.append(dominant)
+                    frame_count += 1
+                    print(f"[{frame_count}] {dominant} ({confidence:.1f}%)")
+
+            except Exception as e:
+                continue
+
+        # Optional timeout: 10 seconds
+        if time.time() - start_time > 10:
+            break
+
+    system.cap.release()
+
+    if not detected_moods:
+        return {"error": "No confident mood detected. Please try again."}
+
+    # ✅ Get the most frequent mood from captured results
+    final_mood = Counter(detected_moods).most_common(1)[0][0]
+
+    # ✅ Fetch songs
+    songs = system.get_spotify_recommendations(final_mood, limit=6) if system.sp else system.get_offline_recommendations(final_mood)
+
+    return {
+        "mood": final_mood,
+        "songs": songs
+    }
