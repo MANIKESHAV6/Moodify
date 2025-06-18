@@ -18,7 +18,7 @@ Below are real-time screenshots captured during mood detection and interaction.
 
 |               Profile DashBoard                       |                  Detailed-Statistics                      |      
 |-------------------------------------------------------|-----------------------------------------------------------|
-| ![Profile](Screenshots/Profile-Dashboard.png)         |![Detailed-Statistics](Screenshots/Detailed-statistics.png)|
+| ![Profile](Screenshots/Profile-Dashboard.png)         |![Detailed-Statistics](Screenshots/Detailed_statistics.png)|
 
 ---
 
